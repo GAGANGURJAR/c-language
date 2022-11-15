@@ -4,7 +4,7 @@
  {
  int x;
  x=123;
- printf("your number%d"x);
+ printf("your number%d",x);
  
  
  }
