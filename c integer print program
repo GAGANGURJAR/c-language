@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<conio.h>
+ void main()
+ {
+ int x;
+ x=123;
+ printf("your number%d"x);
+ 
+ 
+ }
