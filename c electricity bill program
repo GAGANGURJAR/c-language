@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include<conio.h>
+int main()
+{
+    int unit;
+    float amt, total_amt, sur_charge;
+
+    /* Input unit consumed from user */
+    printf("Enter total units consumed: ");
+    scanf("%d", &unit);
+
+
+    /* Calculate electricity bill according to given conditions */
+    if(unit <= 100)
+    {
+        amt = unit * 0 + 500;
+    }
+    else if(unit>=101&&unit<=200)
+    {
+        amt = unit*6+500;
+    }
+    else if(unit>=201&&unit<=300)
+    {
+        amt = unit*7+500;
+    }
+    else 
+    {
+        amt = unit*8+500;
+    }
+    
+
+    /*
+     * Calculate total electricity bill
+     * after adding surcharge
+     */
+    sur_charge = amt * 0.20;
+    total_amt  = amt + sur_charge;
+
+    printf("Electricity Bill = Rs. %.2f", total_amt);
+
+    
+}
