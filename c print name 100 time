@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<conio.H>
+void main()
+{
+int x;
+for (size_t x = 1; x<=100; x++)
+{
+    printf("\nGaganGurjar");
+}
+    
+}
