@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+int x,n;
+char name[100];
+printf("enter your name");
+scanf("%s",&name);
+printf("enter value you want print your name ");
+scanf("%d",&n);
+for (size_t x = 1; x<=n; x++)
+{
+    printf("\n%s",name);
+}
+    
+}
