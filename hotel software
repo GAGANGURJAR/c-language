@@ -1,0 +1,72 @@
+
+#include<stdio.h>
+
+
+
+void main()
+{
+char gmail[100],name[100],adress[200];
+int ch,day,price,date;
+long long int p_no,total;
+
+  printf("-------------------------------------HOTEL GURJAR RESIDENCY--------------------------------\n\n");
+ 
+  printf("|-----Fill your details-----|\n\n");
+  
+  printf("Enter customer name:\t");
+  gets(name);
+ 
+  printf("Enter customer gmail id:\t");
+  gets(gmail);
+ 
+  printf("Enter customer address:\t");
+  gets(adress);
+ 
+  printf("Enter customer phone number:\t");
+  scanf("%lld",&p_no);
+  printf("Enter date:\t");
+  scanf("%d",&date);
+
+     printf("--------NOW SELECT YOUR ROOM---------\n");
+  
+               printf("press 1 : BOOK DELUXE ROOM\n");
+               printf("press 2 : BOOK MEGA DELUXE ROOM \n ");
+               scanf("%d",&ch);
+
+  switch (ch)
+  {
+ case 1: 
+   printf("--------------------------------\n");
+   printf("---------------------------------\n");
+   printf("Enter days custoemr want to stay :\t");
+   scanf("%d",&day);
+   price=900;
+   total=price*day;
+
+   break;
+  
+
+  case 2:
+   printf("--------------------------------\n");
+   printf("---------------------------------\n");
+   printf("Enter days customer want to stay :\t");
+   scanf("%d",&day);
+   price=1300;
+   total=price*day;
+   break;
+   break;
+default : printf("wrong choice");
+
+  }
+ printf("---------------------------------------------------------------------------\n");
+ printf("\t\t\tCUSTOMER BILL\t\t\t\n");
+ printf("---------------------------------------------------------------------------\n");
+printf("Total amount to pay :%lld\n",total);
+ printf("NAME     :\t%s\n",name);
+ printf("Gmail id :\t%s\n",gmail);
+ printf("Address  :\t%s\n",adress);
+ printf("Phone no.:\t%lld\n",p_no); 
+ printf("Date     :\t%s\n",date);
+ printf("Total amount to pay :%lld",total);
+ 
+ }
