@@ -29,8 +29,8 @@ long long int p_no,total;
 
      printf("--------NOW SELECT YOUR ROOM---------\n");
   
-               printf("press 1 : BOOK DELUXE ROOM\n");
-               printf("press 2 : BOOK MEGA DELUXE ROOM \n ");
+               printf("press 1 : BOOK DELUXE ROOM  (900rs/night)\n");
+               printf("press 2 : BOOK MEGA DELUXE ROOM  (1300rs/night)\n ");
                scanf("%d",&ch);
 
   switch (ch)
@@ -61,12 +61,24 @@ default : printf("wrong choice");
  printf("---------------------------------------------------------------------------\n");
  printf("\t\t\tCUSTOMER BILL\t\t\t\n");
  printf("---------------------------------------------------------------------------\n");
-printf("Total amount to pay :%lld\n",total);
  printf("NAME     :\t%s\n",name);
  printf("Gmail id :\t%s\n",gmail);
  printf("Address  :\t%s\n",adress);
  printf("Phone no.:\t%lld\n",p_no); 
- printf("Date     :\t%s\n",date);
- printf("Total amount to pay :%lld",total);
+ printf("Date     :\t%d\n",date);
+ printf("---------------------------------------------------------------------------\n");
+ printf("Room \t\t\t Day \t\t\t price\n");
+ if (ch==1)
+ {
+  printf("Deluxe room");
+ }
+ else
+ {
+  printf("Mega deluxe room");
+ }
+ printf("\t\t  %d",day);
+ printf("\t\t\t   %d\n\n\n\n\n\n\n\n",price);
+ printf("---------------------------------------------------------------------------\n");
+ printf("Total amounbt to pay :\t\t\t\t%d",total);
  
  }
